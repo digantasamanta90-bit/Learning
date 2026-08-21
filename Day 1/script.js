@@ -570,21 +570,21 @@
 // 3. Replace all "banana" values with "watermelon"
 // 4. Sort the array alphabetically
 
-let fruits = [
-    "apple",
-    "banana",
-    "mango",
-    "orange",
-    "banana",
-    "grapes"
-];
-console.log(fruits);
-fruits.splice(1,1)
-console.log(fruits);
-fruits.splice(2,0,"pineapple")
-console.log(fruits);
-fruits.replaceAll("banana","watermelon");
-console.log(fruits);
+// let fruits = [
+//     "apple",
+//     "banana",
+//     "mango",
+//     "orange",
+//     "banana",
+//     "grapes"
+// ];
+// console.log(fruits);
+// fruits.splice(1,1)
+// console.log(fruits);
+// fruits.splice(2,0,"pineapple")
+// console.log(fruits);
+// fruits.replaceAll("banana","watermelon");
+// console.log(fruits);
 
 
 
@@ -616,6 +616,7 @@ console.log(fruits);
 //         age: 21,
 //         marks: 92,
 //         grade: "A+",
+
 //         city: "Delhi"
 //     },
 //     student3: {
@@ -670,3 +671,7 @@ console.log(fruits);
 //     password = password + characters[randomIndex];
 // }
 // console.log(password);
+
+
+// Q41: Shuffle name with password as Q40
+
