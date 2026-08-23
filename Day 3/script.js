@@ -71,17 +71,14 @@
 // Q8. Countdown Timer
 // Print 10 to 1, then print "Liftoff!".
 
-// let countdown = 10;
-
-// const timer = setInterval(() => {
-//     console.log(countdown);
-//     countdown--;
-
-//     if (countdown === 0) {
-//         clearInterval(timer);
-//         console.log("Liftoff!");
-//     }
-// }, 1000);
+// for (let i = 10; i >= 1; i--) {
+//     setTimeout(() => {
+//         console.log(i);
+//         if (i === 1) {
+//             console.log("Liftoff!");
+//         }
+//     }, (11 - i) * 1000);
+// }
 
 
 // Q9. this Keyword with Regular Function
