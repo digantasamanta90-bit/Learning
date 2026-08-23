@@ -293,10 +293,9 @@
 // Return the sum of any number of arguments.
 
 // function sumAll(...nums) {
-//     return nums.reduce((sum, num) => sum + num, 0);
+//     return 
 // }
-
-// console.log(sumAll(1, 2, 3, 4, 5));
+//INCOMPLETE
 
 
 // Q28. introduce()
@@ -304,27 +303,14 @@
 
 // function introduce(firstName, lastName, ...hobbies) {
 //     console.log("Name: " + firstName + " " + lastName);
-//     console.log("Hobbies:");
-
-//     hobbies.forEach((hobby) => {
-//         console.log(hobby);
-//     });
-// }
-
-// introduce("Dibyo", "Pal", "Coding", "Gaming", "Racing");
-
+// INCOMPLETE
 
 // Q29. findLongest()
 // Return the longest string.
 
 // function findLongest(...words) {
-//     return words.reduce((longest, word) => {
-//         return word.length > longest.length ? word : longest;
-//     });
-// }
-
-// console.log(findLongest("Java", "JavaScript", "Python", "C"));
-
+//     return 
+//INCOMPLETE
 
 // Q30. Object Destructuring
 // Destructure name and course.
@@ -401,12 +387,8 @@
 // Q35. summarizeStudent Arrow Function
 // Use default parameter destructuring.
 
-// const summarizeStudent = ({ name = "Unknown", age = 0 } = {}) => {
-//     return name + " is " + age + " years old";
-// };
-
-// console.log(summarizeStudent({ name: "Riya", age: 20 }));
-// console.log(summarizeStudent());
+// const summarizeStudent = 
+//INCOMPLETE
 
 
 // Q36. map with Arrow Functions
