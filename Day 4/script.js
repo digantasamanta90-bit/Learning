@@ -55,7 +55,7 @@
 // This means it automatically updates when matching elements are added or removed.
 // querySelectorAll returns a static NodeList.
 // This means it does not automatically update after the selection is made.
-
+        
 
 // 9. Select all <div> elements with the class card and add a mouseover event listener to each that changes their background color.
 
@@ -117,9 +117,3 @@
 
 // 15. Add a click event listener to a parent <ul> that detects which <li> was clicked and logs its text content.
 
-// const list = document.getElementById("list");
-// list.addEventListener("click", (event) => {
-//     if (event.target.tagName === "LI") {
-//         console.log(event.target.innerText);
-//     }
-// });
