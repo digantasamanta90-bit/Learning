@@ -117,3 +117,4 @@
 
 // 15. Add a click event listener to a parent <ul> that detects which <li> was clicked and logs its text content.
 
+// const list = document.getElementById("list");
