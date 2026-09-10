@@ -1,20 +1,27 @@
-const button = document.getElementById("button");
-button.addEventListener("click", () => {
-    console.log("Button clicked");
-    button.innerHTML = "Downloaded!!!"
-    
-    button.style.marginTop = "10px";
-    button.style.background = "rgb(124, 168, 57)"
-    button.style.border = "none"
-    button.style.height = "20px"
-    button.style.width = "80px"
-    button.style.fontSize = "10px"
-    button.style.color = "antiquewhite"
-    button.style.borderBottomLeftRadius = "7px"
-    button.style.borderBottomRightRadius = "7px"
-    button.style.borderTopLeftRadius = "7px"
-    button.style.borderTopRightRadius = "7px"
-}); 
+let btn = document.querySelector(".btn")
+let h = document.querySelector(".header")
+let innerDiv = document.querySelector(".inner-loader")
+
+let a = 0;
+let c = (b = Math.floor(Math.random()*10)) ? b : 1
+
+btn.addEventListener("click", function () {
+    btn.style.pointerEvents = "none"
+
+    let intervalId = setInterval(() => {
+        a++;
+        h.innerHTML = a + "%";
+        innerDiv.style.width = `${a}%`;
+    }, c * 10);
+
+    setTimeout(function () {
+        clearInterval(intervalId);
+        btn.innerHTML = "Downloaded!!";
+        btn.style.opacity = "0.5";
+        console.log(`Download Time: ${c} secs...`);
+    }, c * 1000);
+});
+
 
 
 
