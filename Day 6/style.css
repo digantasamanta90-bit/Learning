@@ -13,7 +13,7 @@ body{
 
 
 
-.outerdiv{
+.container{
     height: 100vh;
     width: 100vh;
     display: flex;
@@ -25,11 +25,22 @@ body{
 
 }
 
-.upperdiv{
+.loader{
     height: 40px;
     width: 100vh;
     
     display: flex;
+    background-color: white;
+    border: 1px solid rgb(65, 247, 59);;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.inner-loader{
+    height: 40px;
+    width: 0%;
     background-color: rgb(65, 247, 59);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -37,15 +48,7 @@ body{
     border-bottom-right-radius: 20px;
 }
 
-.lowerdiv{
-    height: 40px;
-    width: 100vh;
-    
-    display: flex;
-    justify-content: space-between;
-}
-
-button{
+.btn{
     margin-top: 10px;
     background-color: rgb(124, 168, 57);
     border: none;
@@ -59,7 +62,7 @@ button{
     border-bottom-right-radius: 7px;
 }
 
-.indicator{
+.header{
     margin-top: 15px;
     
     border: none;
@@ -68,4 +71,16 @@ button{
     font-size: 10px;
     font-weight: bold;
     color: black;
+}
+
+.lower-div{
+    height: 40px;
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    
+    align-items: center;
+
 }
