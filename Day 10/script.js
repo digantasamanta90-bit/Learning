@@ -38,19 +38,19 @@
 //11 Allow only 3 password attempts
 // let correctPassword = "12345";
 // let success = false;
-// for (let i = 1; i <= 3; i++) {
-// let password = prompt("Enter password:");
-// if (password === correctPassword) {
-// console.log("Access granted");
-// success = true;
-// break;
-// } else {
-// console.log("Wrong password");
-// }
-// }
-// if (success === false) {
-// console.log("Account locked");
-// }
+//     for (let i = 1; i <= 3; i++) {
+//     let password = prompt("Enter password:");
+//     if (password === correctPassword) {
+//         console.log("Access granted");
+//     success = true;
+//     break;
+//     } else {
+//         console.log("Wrong password");
+//     }
+//     }
+//     if (success === false) {
+//         console.log("Account locked");
+//     }
 
 
 //12 Count how many times user types yes
