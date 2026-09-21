@@ -56,22 +56,22 @@
 //12 Count how many times user types yes
 // let count = 0;
 // while (true) {
-// let word = prompt("Enter a word:");
-// if (word === "stop") {
-// break;
-// }
-// if (word === "yes") {
-// count++;
-// }
+//     let word = prompt("Enter a word:");
+//         if (word === "stop") {
+//             break;
+//         }
+//         if (word === "yes") {
+//             count++;
+//         }
 // }
 // console.log("yes typed = " + count);
 
 
 //13 Print numbers divisible by 7 from 1 to 50
 // for (let i = 1; i <= 50; i++) {
-// if (i % 7 === 0) {
-// console.log(i);
-// }
+//     if (i % 7 === 0) {
+//         console.log(i);
+//     }
 // }
 
 
@@ -158,5 +158,180 @@
 // }
 // if (guessed === false) {
 // console.log("You lost. Number was " + target);
+// }
+
+//21 Calculator until user types exit
+// let choice = "";
+// while (choice !== "exit") {
+// choice = prompt("Enter operation (+, -, *, /) or exit:");
+// if (choice === "exit") {
+// break;
+// }
+// let a = Number(prompt("Enter first number:"));
+// let b = Number(prompt("Enter second number:"));
+// switch (choice) {
+// case "+":
+// console.log(a + b);
+// break;
+// case "-":
+// console.log(a - b);
+// break;
+// case "*":
+// console.log(a * b);
+// break;
+// case "/":
+// console.log(a / b);
+// break;
+// default:
+// console.log("Invalid operation");
+// }
+// }
+
+
+//22 Find total, average and grade of 5 subjects
+// let marks = [];
+// let total = 0;
+// for (let i = 1; i <= 5; i++) {
+// let mark = Number(prompt("Enter marks for subject " + i + ":"));
+// marks.push(mark);
+// total = total + mark;
+// }
+// let average = total / 5;
+// let grade;
+// if (average >= 90) {
+// grade = "A";
+// } else if (average >= 80) {
+// grade = "B";
+// } else if (average >= 70) {
+// grade = "C";
+// } else if (average >= 60) {
+// grade = "D";
+// } else {
+// grade = "F";
+// }
+// console.log("Total = " + total);
+// console.log("Average = " + average);
+// console.log("Grade = " + grade);
+
+
+//23 Create a simple ATM menu system
+// let balance = 1000;
+// let choice = "";
+// while (choice !== "4") {
+// choice = prompt("1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit");
+// if (choice === "1") {
+// console.log("Balance = " + balance);
+// } else if (choice === "2") {
+// let amount = Number(prompt("Enter deposit amount:"));
+// balance = balance + amount;
+// console.log("Balance = " + balance);
+// } else if (choice === "3") {
+// let amount = Number(prompt("Enter withdrawal amount:"));
+// if (amount <= balance) {
+// balance = balance - amount;
+// console.log("Balance = " + balance);
+// } else {
+// console.log("Insufficient balance");
+// }
+// } else if (choice === "4") {
+// console.log("Thank you");
+// } else {
+// console.log("Invalid choice");
+// }
+// }
+
+
+//24 Count vowels in a word
+// let word = prompt("Enter a word:");
+// let count = 0;
+// for (let i = 0; i < word.length; i++) {
+// let ch = word[i];
+// if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+// count++;
+// }
+// }
+// console.log("Number of vowels = " + count);
+
+
+//25 Find the largest among 10 numbers
+// let numbers = [];
+// for (let i = 1; i <= 10; i++) {
+// let num = Number(prompt("Enter number " + i + ":"));
+// numbers.push(num);
+// }
+// let largest = numbers[0];
+// for (let i = 1; i < numbers.length; i++) {
+// if (numbers[i] > largest) {
+// largest = numbers[i];
+// }
+// }
+// console.log("Largest number = " + largest);
+
+
+//26 Reverse a number
+// let num = Number(prompt("Enter a number:"));
+// let reverse = 0;
+// while (num > 0) {
+// let digit = num % 10;
+// reverse = reverse * 10 + digit;
+// num = Math.floor(num / 10);
+// }
+// console.log("Reverse = " + reverse);
+
+
+//27 Check whether password is strong
+// let password = prompt("Enter password:");
+// let hasNumber = false;
+// let hasUppercase = false;
+// for (let i = 0; i < password.length; i++) {
+// if (password[i] >= "0" && password[i] <= "9") {
+// hasNumber = true;
+// }
+// if (password[i] >= "A" && password[i] <= "Z") {
+// hasUppercase = true;
+// }
+// }
+// if (password.length >= 8 && hasNumber && hasUppercase) {
+// console.log("Strong password");
+// } else {
+// console.log("Weak password");
+// }
+
+
+//28 Find total price and apply discount if above 1000
+// let total = 0;
+// for (let i = 1; i <= 5; i++) {
+// let price = Number(prompt("Enter price of item " + i + ":"));
+// total = total + price;
+// }
+// if (total > 1000) {
+// total = total - (total * 0.10);
+// }
+// console.log("Total = " + total);
+
+
+//29 Check whether a number is prime
+// let num = Number(prompt("Enter a number:"));
+// let prime = true;
+// if (num < 2) {
+// prime = false;
+// }
+// for (let i = 2; i < num; i++) {
+// if (num % i === 0) {
+// prime = false;
+// break;
+// }
+// }
+// if (prime) {
+// console.log("Prime number");
+// } else {
+// console.log("Not a prime number");
+// }
+
+
+//30 Generate multiplication table of any number
+// let num = Number(prompt("Enter a number:"));
+// for (let i = 1; i <= 10; i++) {
+// console.log(num + " x " + i + " = " + (num * i));
 // }
 
