@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="app">
       <Header
-        title="NEXGEAR"
+        title="TechCart"
         subtitle="Electronics for Everyone"
       />
       <ProductList />
       <Footer
-        company="NEXGEAR"
+        company="TechCart"
         year={2026}
         message="Built for modern tech lovers"
       />
