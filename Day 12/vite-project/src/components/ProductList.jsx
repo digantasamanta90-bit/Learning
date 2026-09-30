@@ -20,7 +20,7 @@ function ProductList() {
       image: mouseImage,
       name: 'Wireless Mouse',
       category: 'Accessories',
-      price: 1299,
+      price: 120099,
       rating: 4.2,
       inStock: true,
     },
