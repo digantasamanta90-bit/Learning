@@ -1,0 +1,20 @@
+.app {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.student {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.student p {
+  margin: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
